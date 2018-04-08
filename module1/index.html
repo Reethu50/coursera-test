@@ -11,23 +11,24 @@
     </style>
   </head>
 <body ng-app="Lunch Checker">
-   <div class="container">
+   <div class="container" ng-controller='LunchCheckController'>
      <h1>Lunch Checker</h1>
-     <div ng-controller="LunchCheckController">
-      <form>
 
                   <div class="form-group">
-                    <label for="foodItems">Enter Food Items:</label>
-                    <input  id="lunch-menu" type="text" ng-model="foodItems" class="form-control" placeholder="List comma separated dishes you usually have for lunch">
+
+                    <input  id="lunch-menu" type="text"
+                     class="form-control"
+                     placeholder="List comma separated dishes you usually have for lunch"
+                     ng-model='foodItems'>
                   </div>
                   <div class="form-group">
                   <button class="btn btn-primary" ng-click="checkLunchItems()">Check if too much</button>
                   </div>
-                  <div class="form-group message"
+                  <div class="form-group message">
                     {{message}}></div>
-                </form>
+
 
               </div>
-            </div>
+
           </body>
 </html>
