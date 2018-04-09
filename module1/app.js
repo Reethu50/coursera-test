@@ -5,8 +5,8 @@
 
   LunchCheckController.$inject = ['$scope'];
   function LunchCheckController ($scope) {
-    $scope.foodItems = "";
-    $scope.message = "";
+    $scope.foodItems = " ";
+    $scope.message = " ";
     $scope.checkLunchItems = function(items) {
   //    $scope.foodItems = $scope.foodItems.trim();
   var count=0;
